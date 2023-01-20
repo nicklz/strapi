@@ -6,7 +6,7 @@ default: start
 
 install:
 	@echo "-----------------INSTALL----------------------"
-	cd app && yarn
+	nvm install && cd app && yarn && cd ..
 	docker-compose up -d
 	@echo "Install complete please visit http://localhost:1337/"
 start:
