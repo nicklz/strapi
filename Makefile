@@ -10,9 +10,13 @@ install:
 	@echo "Install complete please visit http://localhost:1337/"
 start:
 	@echo "-----------------START----------------------"
-	sudo docker-compose up -d
+	docker-compose up -d
 	@echo "http://localhost:1337/"
 
 stop:
 	@echo "-----------------STOP----------------------"
-	sudo docker-compose down 
+	docker-compose down
+restart:
+	@echo "-----------------RESTART----------------------"
+	docker-compose down
+	docker-compose up -d
