@@ -12,3 +12,7 @@ start:
 	@echo "-----------------START----------------------"
 	sudo docker-compose up -d
 	@echo "http://localhost:1337/"
+
+stop:
+	@echo "-----------------STOP----------------------"
+	sudo docker-compose down 
