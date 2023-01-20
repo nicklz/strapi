@@ -6,7 +6,8 @@ default: start
 
 install:
 	@echo "-----------------INSTALL----------------------"
-	sudo docker-compose up -d
+	cd app && yarn
+	docker-compose up -d
 	@echo "Install complete please visit http://localhost:1337/"
 start:
 	@echo "-----------------START----------------------"
